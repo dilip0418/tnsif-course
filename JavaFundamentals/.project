@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/com/dilip/dayThreeCodes/accessModifiersIMG/Access-Modifier.png</name>
+			<type>1</type>
+			<location>D:/git/tnsif-course/JavaFundamentals/src/com/dilip/dayThreeCodes/accessModifiersIMG/Access-Modifier.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>

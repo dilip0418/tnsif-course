@@ -41,7 +41,7 @@ public class UserDefinedMarkerInterfaceDemo2 {
 		List<DataElement> dataElements = new ArrayList<>();
 		dataElements.add(new RegularDataElement("Social Media"));
 		dataElements.add(new HighPriorityDataElement("Self Development"));
-		dataElements.add(new RegularDataElement("Over Enterainment"));
+		dataElements.add(new RegularDataElement("Over Entertainment"));
 		dataElements.add(new HighPriorityDataElement("Coding & Programming"));
 
 		for (DataElement element : dataElements) {

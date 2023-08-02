@@ -32,7 +32,7 @@ public class BuiltIns {
 		
 		int arr1[] = new int[5];
 		
-		// to fill the array intially with any default value we can use 
+		// to fill the array initially with any default value we can use 
 		Arrays.fill(arr1, 999);
 		printArr(arr1);
 		

@@ -1,4 +1,4 @@
-package com.dilip.dayNneCodes.MultiThreadingDemo.WaysOfCreatingThreads;
+package com.dilip.dayNineCodes.MultiThreadingDemo.WaysOfCreatingThreads;
 
 //To make a class use threads and Multi-Threading concepts it must extend the Thread class
 

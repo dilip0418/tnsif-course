@@ -1,4 +1,4 @@
-package com.dilip.dayNneCodes.MultiThreadingDemo;
+package com.dilip.dayNineCodes.MultiThreadingDemo;
 
 class MyRunnable1 implements Runnable{
 	@Override

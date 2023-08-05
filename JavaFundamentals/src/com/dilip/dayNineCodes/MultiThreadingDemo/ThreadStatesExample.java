@@ -1,5 +1,18 @@
 package com.dilip.dayNineCodes.MultiThreadingDemo;
 
+/*Thread States in Java:
+	NEW: The thread has been created but not started yet.
+	
+	RUNNABLE: The thread is executing or is ready to run.
+	
+	BLOCKED: The thread is blocked because it's waiting for a monitor 
+	lock to enter a synchronized block/method held by another thread.
+	
+	WAITING: The thread is waiting indefinitely for another thread to perform a particular action.
+	
+	TIMED_WAITING: Similar to WAITING, but the thread is waiting for a specified period of time.
+	
+	TERMINATED: The thread has completed its execution.*/
 
 class MyRunnable implements Runnable {
 	@Override

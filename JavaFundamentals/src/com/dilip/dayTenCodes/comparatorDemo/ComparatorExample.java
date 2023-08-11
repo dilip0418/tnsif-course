@@ -1,4 +1,4 @@
-package com.dilip.dayTenCodes.comparatorDemo.comparatorDemo;
+package com.dilip.dayTenCodes.comparatorDemo;
 
 import java.util.ArrayList;
 import java.util.Collections;

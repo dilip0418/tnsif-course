@@ -9,6 +9,7 @@ class Song {
 	private String author;
 	private int duration;
 
+
 	public Song(String name, String author, int duration) {
 		super();
 		this.name = name;
@@ -27,6 +28,10 @@ class Song {
 	public String getAuthor() {
 		return author;
 	}
+
+	public static Comparator<Song> nameComparator = Comparator.comparing(Song::getName);
+	public static Comparator<Song> auhtorComparator = Comparator.comparing(Song::getAuthor);
+	public static Comparator<Song> durationComparator = Comparator.comparing(Song::getDuration);
 
 	public void setAuthor(String author) {
 		this.author = author;
@@ -59,22 +64,21 @@ public class MusicPlayer {
 		
 		
 		// sort by song name
-		Comparator<Song> nameComparator = Comparator.comparing(Song::getName);
-		Collections.sort(songs, nameComparator);
+		Collections.sort(songs, Song.nameComparator);
 		System.out.println("Sort by song name:");
 		display(songs);
 
 		System.out.println();
+		
 		// sort by song author
-		Comparator<Song> auhtorComparator = Comparator.comparing(Song::getAuthor);
-		Collections.sort(songs, auhtorComparator);
+		Collections.sort(songs, Song.auhtorComparator);
 		System.out.println("Sort by song author:");
 		display(songs);
 		
 		System.out.println();
+		
 		// sort by song author
-		Comparator<Song> durationComparator = Comparator.comparing(Song::getDuration);
-		Collections.sort(songs, durationComparator);
+		Collections.sort(songs, Song.durationComparator);
 		System.out.println("Sort by song duration:");
 		display(songs);
 		

@@ -21,6 +21,7 @@ class Person implements Comparable<Person> {
 		return age;
 	}
 
+	// overriding compareTo method of Comparable class
 	@Override
 	public int compareTo(Person otherPerson) {
 		return Integer.compare(this.age, otherPerson.age);
@@ -34,7 +35,7 @@ public class ComparableExample {
 		people.add(new Person("Bob", 30));
 		people.add(new Person("Charlie", 22));
 
-		Collections.sort(people);
+		Collections.sort(people); // The sort method of Collections class implicitly uses the comareTo() method
 
 		for (Person person : people) {
 			System.out.println(person.getName() + " - " + person.getAge());

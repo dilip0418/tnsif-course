@@ -1,5 +1,6 @@
 package com.dilip.dayTenCodes.collectionsDemo.setDemo;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NavigableSet;
 import java.util.Set;
@@ -17,6 +18,10 @@ public class TreeSetExample {
 		set.add(6);
 		set.add(4);
 		set.add(20);
+		
+		System.out.println(set);
+		
+		System.out.println();
 		/*
 		 * try { set.add(null); }catch(NullPointerException e) {
 		 * System.err.println(e.getMessage()+ " values aren't accepted in TreeSet"); }
@@ -54,7 +59,10 @@ public class TreeSetExample {
 		System.out.println(set.floor(5)); // return 4 because condition ( 4 is the greatest of all the elements that are
 											// less then 5)
 
-		Set<Student> students = new TreeSet<>(Student.idComparator);
+		System.out.println();
+		
+		Set<Student> students = new TreeSet<>(Comparator.comparing(Student::getId));
+		// Set<Student> students = new TreeSet<>(Student.idComparator);
 		// Set<Student> students = new TreeSet<>(Student.nameComparator);
 		// Set<Student> students = new TreeSet<>(Student.ageComparator);
 		// Set<Student> students = new TreeSet<>(Student.nameAgeComparator);
